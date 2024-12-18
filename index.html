@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Basic</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="" method="post">
+      <div class="form-row">
+        <label
+          >İsim<input
+            class="box"
+            type="text"
+            name="name"
+            placeholder="Berk Yılmaz"
+            required
+        /></label>
+      </div>
+      <div class="form-row">
+        <label
+          >Telefon<input
+            class="box"
+            type="tel"
+            name="telefon"
+            placeholder="+90 555 755 12 24"
+            required
+        /></label>
+      </div>
+      <div class="form-row">
+        <label
+          >Eposta<input
+            class="box"
+            type="email"
+            name="email"
+            placeholder="qwe@gmail.com"
+            required
+        /></label>
+      </div>
+      <div class="form-row" v>
+        <label for="message">Message</label>
+        <textarea
+          class="box"
+          name="message"
+          id="message"
+          rows="5"
+          placeholder="Message..."
+        ></textarea>
+      </div>
+      <div class="form-row">
+        <label for="city">Yaşadığın Şehir</label>
+        <select class="box" id="city">
+          <option value="">Select Option</option>
+          <option value="Ankara">Ankara</option>
+          <option value="Rize">Rize</option>
+          <option value="İzmir">İzmir</option>
+          <option value="İstanbul">İstanbul</option>
+        </select>
+      </div>
+      <div>
+        <label>En sevdiğiniz renk </label>
+        <div class="radio-container">
+          <label> <input type="radio" name="color" />Mavi</label>
+          <label>
+            <input type="radio" name="color" value="kırmızı" />Kırmızı
+          </label>
+          <label> <input type="radio" name="color" value="sarı" />Sarı </label>
+          <label> <input type="radio" name="color" value="mor" />Mor </label>
+        </div>
+      </div>
+      <div class="buttons">
+        <button type="reset">Sıfırla</button>
+        <button type="submit">Gönder</button>
+      </div>
+    </form>
+  </body>
+</html>
